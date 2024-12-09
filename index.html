@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Chess Game</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: rgb(0, 0, 0);
+            background-image: url(bg.jpg); /* Example Image */
+            background-size: cover; /* Ensure the image covers the entire body */
+            background-position: center top; /* Position the image at the top center */
+            background-attachment: fixed; /* Keep the background fixed while scrolling */
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        h1, h3 {
+            animation: pop-up 0.6s ease-in-out forwards;
+        }
+
+        @keyframes pop-up {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Header Section */
+        header {
+            background-color: #27292b;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url();
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        .cta-btn {
+            background-color: #28a745;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Contact and User Options */
+        .contact {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #3d3f41;
+        }
+
+        .contact-info p, .user-options a {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .user-options a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff6600;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .user-options a:hover {
+            background-color: #e65c00;
+        }
+
+        /* Pop-up Window */
+        .popup {
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            color: #333;
+            border: 2px solid #ccc;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 1000;
+        }
+
+        .popup-content h3 {
+            color: #1C39BB;
+        }
+
+        .close-btn {
+            padding: 10px 15px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #003366;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .social-icons {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        footer .social-icons li {
+            display: inline-block;
+        }
+
+        footer .social-icons li a {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        footer form input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer form button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Online Chess Game</h1>
+        <p>Welcome to ChessWorld! Whether you're a beginner or a grandmaster, our platform offers exciting games, robust learning tools, and thrilling competitions.</p>
+        <a href="about.html" class="cta-btn">Learn More</a> <!-- Updated Link -->
+    </section>
+
+    <!-- Contact and Registration Section -->
+    <section class="contact">
+        <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> +1-234-567-890</p>
+            <p><i class="fas fa-envelope"></i> support@onlinechess.com</p>
+        </div>
+        <div class="user-options">
+            <a href="Register.html" class="Register-btn">New User? Register</a>
+            <a href="login.html" class="sign-in-btn">Sign In</a> <!-- Updated Link to login.html -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Stay connected with us</p>
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
